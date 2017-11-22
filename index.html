@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Match Game</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background: #2b2424;
+        }
+        footer span{
+            color:#fff;
+            margin-right: 20px;
+        }
+        #board {
+            background: #ccc;
+            width: 650px;
+            height: 600px;
+            padding: 0 25px;
+            margin: 5px auto;
+        }
+
+        #board>div {
+            background: gold;
+            border: #000 1px solid;
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 25px;
+            font-size: 64px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #moves {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="completion" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modelTitleId">Hurray!!</h4>
+                </div>
+                <div class="modal-body" id="completion">
+                    <h5>
+                        You have completed the game in
+                        <span id="moves"></span> Moves
+                    </h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="reset" class="btn btn-primary">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <div id="board">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <span class="float-right">
+            Abrial Stha | All rights reserved
+        </span>
+    </footer>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
