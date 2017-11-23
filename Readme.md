@@ -1,11 +1,11 @@
 # MatchMaking Game  
->This is a fun game where user must find two distinct card one after another until there are no card left.  
->### Language used  
->* html  
->* css  
->* js/jquery 
->* bootstrap(css/js)
->* animate.css  
+This is a fun game where user must find two distinct card one after another until there are no card left.  
+### Language used  
+* html  
+* css  
+* js/jquery 
+* bootstrap(css/js)
+* animate.css  
 
 - Inital Gameplay view on browser  
 ![alt text](/img/initial_gameplay.png "Initial gameplay")  
