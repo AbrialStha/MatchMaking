@@ -1,6 +1,9 @@
 //card contains original
-let item = ['1', '2', '3', '4', '5', '6', '7', '8', '1', '2', '3', '4', '5', '6', '7', '8'];
-//shuffled items
+let data = ['1','2','3','4','5','6','7','8'];
+let item = data.concat(data);
+// console.log(item);
+
+//shuffling the items
 let shuffle_item = [];
 
 //To shuffle the array
@@ -24,6 +27,7 @@ let newBoard = () => {
     //to setup cards
     let card_setup = '';
     shuffle_item = shuffle(item);
+    // console.log(shuffle_item);
 
     shuffle_item.forEach((ele, index) => {
         card_setup += `<div id="${index}"></div>`
