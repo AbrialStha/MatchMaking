@@ -1,4 +1,4 @@
-# MatchMaking Game [![alt text](/img/play.png "Initial gameplay")](https://abrialstha.github.io/matchmaking/)
+# MatchMaking Game [![alt text](/img/play1.png "Initial gameplay")](https://abrialstha.github.io/matchmaking/)
 This is a fun game where user must find two distinct card one after another until there are no card left.  
 
 ### Language used  
