@@ -75,6 +75,11 @@ $(document).ready(() => {
                 recent_flip_value = ind;
             } else {
                 if (shuffle_item[recent_flip_value] == shuffle_item[ind]) {
+                    let temp = recent_flip_value;
+                    setTimeout(()=>{
+                        $(this).css({color:'#fff',background:"green"});
+                        $(`#${temp}`).css({color:'#fff',background:"green"});
+                    },400)
                     recent_flip_value = null;
                     game_track += 2;
                     is_complete();
