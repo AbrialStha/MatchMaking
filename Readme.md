@@ -8,6 +8,7 @@ This is a fun game where user must find two distinct card one after another unti
 * animate.css  
 
 ### Game Preview
+---
 
 - Inital Gameplay view on browser  
 ![alt text](/img/initial_gameplay.png "Initial gameplay")  
