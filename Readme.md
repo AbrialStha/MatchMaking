@@ -1,5 +1,8 @@
 # MatchMaking Game  
 This is a fun game where user must find two distinct card one after another until there are no card left.  
+[
+    ![alt text](/img/play.png "Initial gameplay")
+](https://abrialstha.github.io/matchmaking/)
 ### Language used  
 * html  
 * css  
