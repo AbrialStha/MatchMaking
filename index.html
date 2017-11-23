@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Match Game</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <style>
-        body{
+        body {
             background: #2b2424;
         }
-        footer span{
-            color:#ccc;
+
+        footer span {
+            color: #ccc;
             margin-right: 20px;
         }
 
-        .fixed{
+        .fixed {
             position: fixed;
-            top:20px;
+            top: 20px;
             left: 20px;
             color: #ccc;
-            width:300px;
+            width: 300px;
         }
-        .fixed hr{
+
+        .fixed hr {
             border-color: #ccc;
         }
+
         #board {
             background: #ccc;
             width: 650px;
@@ -75,8 +79,12 @@
     </div>
 
     <div class="fixed">
-        <h1>Find the match</h1><hr>
+        <h1>Find the match</h1>
+        <hr>
         <p>There is a mirror card for each card find them all to complete the game.</p>
+        <p id="my_alert">
+
+        </p>
     </div>
 
     <div class="container">
@@ -95,10 +103,10 @@
 
 
     <!-- <script src="node_modules/jquery/dist/jquery.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
 
 </body>

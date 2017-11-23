@@ -58,12 +58,14 @@ $(document).ready(() => {
         //checking if card is open or not
         if ($(this).attr('data-open') == 'yes') {
             //Do nothing
-            console.log('not allowed');
-            alert('already open');
+            // alert('already open');
+            $('#my_alert').append(`<div class="alert alert-danger fade show" role="alert">Card is Already Opened!</div>`);
+            setTimeout(()=>$(".alert").alert('close'),900);
         } else {
             number_of_moves++;
             $(this).attr("data-open", "yes");
             let ind = $(this).attr('id');
+            $(this).addClass('animated flipInY');
             $(this).css('background', '#fff').text(shuffle_item[ind]);
 
             if (recent_flip_value == null) {
@@ -76,11 +78,11 @@ $(document).ready(() => {
                 } else {
                     console.log(recent_flip_value);
                     setTimeout(() => {
-                        $(this).text('').css('background', 'gold').removeAttr('data-open');
-                        $(`#${recent_flip_value}`).text('').css('background', 'gold').removeAttr('data-open');
+                        $(this).text('').css('background', 'gold').removeAttr('data-open').removeAttr('class');
+                        $(`#${recent_flip_value}`).text('').css('background', 'gold').removeAttr('data-open').removeAttr('class');
                         recent_flip_value = null;
                         console.log(recent_flip_value);
-                    }, 300)
+                    }, 800)
                 }
             }
         }
