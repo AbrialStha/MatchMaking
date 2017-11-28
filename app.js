@@ -56,6 +56,13 @@ $(document).ready(() => {
             $('#completion').modal('show');
         }
     }
+
+    //Progressbar update
+    let progress = mov=>{
+        let per = mov / 16 * 100;
+        $('.progress-bar').css('width',`${per}%`).text(per+'%');
+        $('#prog').text(per+'%');
+    }
     //Reseting the game after completion
     $('#reset').click(() => {
         location.reload();
@@ -70,6 +77,7 @@ $(document).ready(() => {
             setTimeout(()=>$(".alert").alert('close'),900);
         } else {
             number_of_moves++;
+            $('#mov').text(number_of_moves);
             $(this).attr("data-open", "yes");
             let ind = $(this).attr('id');
             $(this).addClass('animated flipInY');
@@ -86,6 +94,7 @@ $(document).ready(() => {
                     },400)
                     recent_flip_value = null;
                     game_track += 2;
+                    progress(game_track);
                     is_complete();
                 } else {
                     setTimeout(() => {
